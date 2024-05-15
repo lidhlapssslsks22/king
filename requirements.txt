@@ -1,5 +1,5 @@
-# حط مكاتبك
-import requests
-import telebot,time
-from telebot import types
-import os
+telebot
+requests
+time
+types
+os
