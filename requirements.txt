@@ -1,5 +1,1 @@
 telebot
-requests
-time
-types
-os
